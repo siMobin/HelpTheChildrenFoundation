@@ -20,7 +20,7 @@ const Slider = () => {
         pagination={{ clickable: true }}
         autoplay={{ delay: 5000 }}
         loop={true}
-        className="h-[30dvh] md:h-[50dvh] lg:h-dvh w-full"
+        className="h-[30dvh] md:h-[50dvh] lg:h-[calc(100dvh-4.5rem)] w-full"
       >
         <SwiperSlide>
           <div className="__s_container">

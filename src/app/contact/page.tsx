@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <main>
       <Header />
-      <section className="min-h-dvh grid grid-cols-1 lg:grid-cols-2 gap-18 bg-foreground text-background mt-18 p-24">
+      <section className="min-h-dvh grid grid-cols-1 lg:grid-cols-2 gap-18 bg-foreground text-background p-24">
         <div className="flex  justify-center flex-col space-y-4">
           <h1 className="text-4xl ">Get in touch</h1>
           <p>

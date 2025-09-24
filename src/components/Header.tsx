@@ -16,7 +16,7 @@ import { Button } from "./ui/button";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 w-full border-b bg-sky-900/95 backdrop-blur supports-[backdrop-filter]hover:bg-background/60 p-2 px-8 shadow border-none">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full h-18 max-h-18 min-h-18 border-b bg-sky-900/95 backdrop-blur supports-[backdrop-filter]hover:bg-background/60 p-2 px-8 shadow border-none">
       <div className="container flex h-14 items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-3">
@@ -92,7 +92,7 @@ export default function Header() {
           </NavigationMenuList>
         </NavigationMenu>
 
-        <Button className="font-bold">Be a Sponsor</Button>
+        <Button className="font-bold ping">Be a Sponsor</Button>
       </div>
     </header>
   );

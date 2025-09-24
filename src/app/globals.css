@@ -156,6 +156,21 @@
     button {
         cursor: pointer;
     }
+
+    .ping {
+        @apply relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -0.2em;
+            @apply size-4 animate-ping rounded-full bg-primary;
+            /* transform: translateX(140%); */
+            transform: translateY(-50%);
+            filter: blur(1px);
+        }
+    }
 }
 
 

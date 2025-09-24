@@ -108,7 +108,7 @@ const TeamSection: React.FC = () => {
       <div className="container w-5/6 2xl:w-2/3 mx-auto">
         {/* Section Title */}
         <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">
-          Meet Our <span className="text-primary">Team</span>
+          Meet Our Other <span className="text-primary">Team</span> Members
         </h2>
 
         {/* Team Grid */}
