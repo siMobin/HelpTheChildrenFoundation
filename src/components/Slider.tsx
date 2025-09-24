@@ -20,27 +20,31 @@ const Slider = () => {
         pagination={{ clickable: true }}
         autoplay={{ delay: 5000 }}
         loop={true}
-        className="h-screen"
+        className="h-[30dvh] md:h-[50dvh] lg:h-dvh w-full"
       >
         <SwiperSlide>
-          <div className="relative h-full">
+          <div className="__s_container">
             <img
-              src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNFq5tDThRbaJjEyP_ox4UkYsfUNkHyj0cPPo_FwmHWN0aNF-200oTa2YKONA4C39IE2w&usqp=CAU"
               alt="Dummy Image 1"
               className="w-full h-full object-cover"
             />
             <div className="__slider">
               <div className="flex flex-col gap-4 items-center">
-                <p className="text-white text-4xl font-bold">Dummy Text 1</p>
+                <p className="text-white text-4xl font-bold text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <br />
+                  Pariatur, ipsa.
+                </p>
                 <Button>Learn More</Button>
               </div>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative h-full">
+          <div className="__s_container">
             <img
-              src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCJW2sb3cMcE0cexkiGlXQ2Gih0gKRc6MSCA&s"
               alt="Dummy Image 2"
               className="w-full h-full object-cover"
             />
@@ -50,7 +54,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative h-full">
+          <div className="__s_container">
             <img
               src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Dummy Image 3"
@@ -62,7 +66,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative h-full">
+          <div className="__s_container">
             <img
               src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Dummy Image 4"

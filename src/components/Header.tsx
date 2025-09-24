@@ -19,8 +19,9 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 w-full border-b bg-sky-900/95 backdrop-blur supports-[backdrop-filter]hover:bg-background/60 p-2 px-8 shadow border-none">
       <div className="container flex h-14 items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2">
-          <img src="/icon.svg" className="h-12" alt="" />
+        <Link href="/" className="flex items-center space-x-3">
+          <img src="/icon.svg" className="h-12" alt="Help" />
+          <img src="/logo_text.svg" className="h-8 " alt="Help" />
         </Link>
 
         {/* Navigation Menu */}
@@ -37,11 +38,9 @@ export default function Header() {
                         href="/"
                       >
                         <div className="mb-2 mt-4 text-lg font-medium">
-                          <img src="/icon.svg" alt="" />
+                          <img src="/icon.svg" alt="" className="" />
                         </div>
-                        <p className="text-sm leading-tight text-muted-foreground">
-                          Transforming lives through education.
-                        </p>
+                        <img src="/logo_text_bottom_color.svg" alt="" />
                       </Link>
                     </NavigationMenuLink>
                   </li>
@@ -49,7 +48,7 @@ export default function Header() {
                     Learn about our mission and vision.
                   </ListItem>
                   <ListItem href="/team" title="Our Team">
-                    Meet the people behind JAAGO.
+                    Meet the people behind HCF.
                   </ListItem>
                   <ListItem href="/impact" title="Our Impact">
                     See the difference we make.
