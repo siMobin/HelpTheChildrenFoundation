@@ -28,16 +28,23 @@ export default function Header() {
         <NavigationMenu className="bg-white p-2 rounded-full shadow-md">
           <NavigationMenuList>
             <NavigationMenuItem>
+              <Link href="/" legacyBehavior passHref>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  Home
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
               <NavigationMenuTrigger>About Us</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                  <li className="row-span-3">
+                  <li className="row-span-4">
                     <NavigationMenuLink asChild>
                       <Link
                         className="bg-transparent hover:bg-transparent"
                         href="/"
                       >
-                        <div className="mb-2 mt-4 text-lg font-medium">
+                        <div className="mb-2 text-lg font-medium">
                           <img src="/icon.svg" alt="" className="" />
                         </div>
                         <img src="/logo_text_bottom_color.svg" alt="" />
@@ -52,6 +59,9 @@ export default function Header() {
                   </ListItem>
                   <ListItem href="/impact" title="Our Impact">
                     See the difference we make.
+                  </ListItem>
+                  <ListItem href="/faq" title="FAQ">
+                    Find answers to common questions.
                   </ListItem>
                 </ul>
               </NavigationMenuContent>
@@ -71,6 +81,9 @@ export default function Header() {
                   </ListItem>
                   <ListItem href="/volunteer" title="Volunteer Program">
                     Join us and make a difference.
+                  </ListItem>
+                  <ListItem href="/gallery" title="Gallery">
+                    Explore our moments and milestones.
                   </ListItem>
                 </ul>
               </NavigationMenuContent>
@@ -92,7 +105,9 @@ export default function Header() {
           </NavigationMenuList>
         </NavigationMenu>
 
-        <Button className="font-bold ping">Be a Sponsor</Button>
+        <Link href="/sponsor-a-child" className="capitalize">
+          <Button className="font-bold ping">Be a Sponsor</Button>
+        </Link>
       </div>
     </header>
   );

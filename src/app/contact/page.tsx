@@ -15,8 +15,8 @@ export default function Contact() {
           <h1 className="text-4xl ">Get in touch</h1>
           <p>
             Write one or two welcoming sentences that encourage contact. Include
-            your response time commitment and highlight your team's readiness to
-            help.
+            your response time commitment and highlight your team&apos;s
+            readiness to help.
           </p>
           <span className="flex gap-4">
             <MapPin size={16} className="" />

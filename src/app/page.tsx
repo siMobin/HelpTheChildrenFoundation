@@ -8,86 +8,31 @@ import Activities from "./Activities";
 export default function Home() {
   return (
     <main>
-      <Header />
       <Slider />
-      <section>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          minima, nemo est explicabo illo quaerat atque blanditiis placeat
-          adipisci numquam natus excepturi ab vitae commodi mollitia consectetur
-          omnis in. Pariatur officiis at excepturi dolores sit porro illo veniam
-          rerum perferendis doloribus, quam sint officia culpa labore ipsam
-          voluptas praesentium fugit quod libero eum. Quod aliquid dignissimos
-          quia accusamus similique tempora esse. Amet enim inventore ut dolores
-          laborum nisi dolorum itaque sit iusto nesciunt iure dolor molestiae
-          sint numquam perferendis architecto labore et est quisquam qui,
-          voluptatem ullam fuga optio ea. Nemo labore deserunt possimus? Beatae,
-          molestiae officiis nostrum sequi atque sed quibusdam dolorem aperiam
-          molestias deserunt cumque qui exercitationem, aliquid, inventore quo
-          cum dolore nulla. Itaque, explicabo. In reiciendis iure voluptatem
-          deleniti officiis rerum possimus iusto omnis ea sequi quod esse,
-          labore distinctio corporis velit minima rem enim magni totam ipsam.
-          Tempora eligendi nihil, iusto cum enim, fugiat esse eveniet delectus
-          labore possimus beatae facere atque veritatis ipsam, sint dolorem!
-          Cumque quibusdam repudiandae maiores qui soluta dignissimos debitis
-          cum ipsum iusto tenetur quasi commodi fuga fugiat rerum nesciunt
-          sapiente accusamus modi numquam, quidem molestiae architecto.
-          Quisquam, laboriosam voluptatum eius impedit quibusdam delectus
-          asperiores consequatur atque repellendus repudiandae nisi enim eos.
-        </p>
-      </section>
 
-      <section className="flex justify-center">
-        <div className="relative min-h-96 pb-12 bg-gray-50">
-          <div className="container max-w-6xl 2xl:max-w-6xl py-20">
-            <div
-              data-aos="fade-up"
-              data-aos-duration="500"
-              data-aos-delay="300"
-              className="flex flex-col lg:flex-row shadow-2xl md:rounded-l-2xl md:rounded-r-2xl aos-init aos-animate"
-            >
-              <div className="basis-1/2 flex-1 md:rounded-l-2xl">
-                <picture>
-                  <img
-                    loading="lazy"
-                    width="576"
-                    height="550"
-                    className="size-full object-cover object-center md:rounded-l-2xl lazyloaded"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Li6mpF-uNk6b2Pt1X_Co_hsj-aKa_j9o8RWFH-Uuc6fp1bla2dEVonP2aHnXH30sV1A&usqp=CAU"
-                    alt="Sponsor a child"
-                  />
-                </picture>
-              </div>
-              <div className="basis-1/2 flex-1 bg-white flex items-center rounded-r-2xl">
-                <div className="p-8">
-                  <h2 className="uppercase text-2xl font-bold font-heading mb-4 text-secondary">
-                    Sponsor a child program
-                  </h2>
-                  <p className="mb-6 text-md text-secondary">
-                    We believe in the potential of every child and that
-                    education is the key to unlocking that potential. Yet, due
-                    to financial constraints, for countless children, education
-                    is an unattainable luxury. For the past 17 years, we have
-                    been working to change this reality!
-                  </p>
-                  <p className="mb-6 text-md text-secondary">
-                    Through our Sponsor A Child Program, we have ensured quality
-                    education for over 5000 children from underserved
-                    communities.
-                  </p>
-                  <p className="mb-6 text-md text-secondary">
-                    You can also join the initiative. With just BDT 2,500 per
-                    month, you can give children in need access to educational
-                    opportunities and support their journey towards a brighter
-                    future. Help Change a life today!
-                  </p>
-                  <Link className="capitalize" href="#">
-                    <Button>Be A Sponsor</Button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-18 max-h-min relative bg-primary text-white">
+        <div className="shadow-2xl">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Li6mpF-uNk6b2Pt1X_Co_hsj-aKa_j9o8RWFH-Uuc6fp1bla2dEVonP2aHnXH30sV1A&usqp=CAU"
+            alt=""
+            loading="lazy"
+            className="w-full h-full max-h-[60dvh] object-cover"
+          />
+        </div>
+        <div className="p-4 space-y-4 flex flex-col justify-center">
+          <h1 className="text-4xl font-bold">Sponsor a child program</h1>
+          <p className="text-justify text-lg">
+            Within every child lies boundless potential, and education is the
+            key to unlocking opportunities that allow this potential to
+            flourish. By sponsoring a child, you are providing marginalised
+            children with essential tools that will empower them to change their
+            reality and create a better and brighter future, not only for
+            themselves and their families but also for their communities as a
+            whole.
+          </p>
+          <Link href="/sponsor-a-child">
+            <Button variant={"secondary"}>Sponsor A Child</Button>
+          </Link>
         </div>
       </section>
 
@@ -145,7 +90,7 @@ export default function Home() {
           </h3>
           <Link rel="nofollow" className="" href="#" target="_blank">
             <Button variant={"secondary"} className="mt-5">
-              Become a national volunteer
+              Become A Volunteer
             </Button>
           </Link>
         </div>
