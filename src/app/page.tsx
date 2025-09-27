@@ -17,6 +17,7 @@ export default function Home() {
             alt=""
             loading="lazy"
             className="w-full h-full max-h-[60dvh] object-cover"
+            data-aos="fade-right"
           />
         </div>
         <div className="p-4 space-y-4 flex flex-col justify-center">

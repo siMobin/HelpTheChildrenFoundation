@@ -38,12 +38,11 @@ export default function Home() {
 
           {/* Image Section */}
           <div className="order-1 md:order-2 relative">
-            <div className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-xl">
-              <Image
-                src="/founder.jpg"
+            <div className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-xl __bg">
+              <img
+                src="/images/team/arifur-rahman.webp"
                 alt="Founder"
-                fill
-                className="object-cover"
+                className="h-auto w-full px-4 pt-4"
               />
               <div className="absolute bottom-6 left-6 bg-blue-700 text-white px-6 py-3 rounded-lg shadow-lg">
                 <p className="font-bold text-lg">Founder & Chairman</p>
@@ -58,11 +57,10 @@ export default function Home() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-10">
           {/* Image Section */}
           <div className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-xl">
-            <Image
-              src="/cofounder.jpg"
-              alt="Co-Founder"
-              fill
-              className="object-cover"
+            <img
+              src="/images/team/asif.png"
+              alt="Founder"
+              className="h-auto w-full pl-4 pt-4"
             />
             <div className="absolute bottom-6 left-6 bg-purple-700 text-white px-6 py-3 rounded-lg shadow-lg">
               <p className="font-bold text-lg">Co-Founder & CTO</p>
@@ -75,7 +73,7 @@ export default function Home() {
               About Co-Founder
             </h2>
             <h3 className="text-2xl font-semibold text-purple-700 mb-4">
-              Jane Smith
+              Shenoor Rhaman Asif
             </h3>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
               Jane Smith, a technology leader with a Master’s in Software

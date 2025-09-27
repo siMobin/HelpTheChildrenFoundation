@@ -27,7 +27,9 @@ export default function Contact() {
           </span>
           <Link href="tel:" className="inline-flex gap-2 items-center">
             <PhoneCall size={16} />
-            +880153587632494
+            +8801771744444
+            <br />
+            +8802222228165
           </Link>
           <Link href="mailto:" className="inline-flex gap-2 items-center">
             <Mail size={16} />

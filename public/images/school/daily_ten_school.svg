@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236.15 66.91">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.19em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-5 {
+        fill: #fff;
+        font-family: DKCoolCrayon, 'DK Cool Crayon';
+      }
+
+      .cls-6 {
+        font-size: 30px;
+      }
+
+      .cls-7 {
+        font-size: 25px;
+      }
+
+      .cls-8 {
+        letter-spacing: -.04em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <text class="cls-5" transform="translate(0 22.46) scale(.96 1)"><tspan class="cls-7"><tspan class="cls-1" x="0" y="0">V</tspan><tspan x="15.02" y="0">ision of</tspan></tspan><tspan class="cls-6"><tspan class="cls-8" x="0" y="35">D</tspan><tspan x="17.34" y="35">ai</tspan><tspan class="cls-2" x="40.68" y="35">l</tspan><tspan x="54.21" y="35">y </tspan><tspan class="cls-3" x="81.42" y="35">T</tspan><tspan x="94.47" y="35">en S</tspan><tspan class="cls-4" x="160.29" y="35">c</tspan><tspan x="177.69" y="35">hool</tspan></tspan></text>
+  </g>
+</svg>

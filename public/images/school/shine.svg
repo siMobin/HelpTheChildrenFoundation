@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 237.35 213.03">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #20578e;
+      }
+
+      .cls-2 {
+        fill: #f5a521;
+      }
+
+      .cls-3 {
+        font-family: DKCoolCrayon, 'DK Cool Crayon';
+        font-size: 36.32px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <text class="cls-3" transform="translate(9.47 88.92) rotate(-16.87)"><tspan class="cls-1"><tspan x="0" y="0">Every child</tspan></tspan><tspan class="cls-2"><tspan x="0" y="39.42">Deserves</tspan></tspan><tspan class="cls-2"><tspan x="0" y="78.83">a Chance</tspan></tspan><tspan class="cls-2" x="0" y="118.25">to </tspan><tspan class="cls-1" x="54.78" y="118.25">Shine</tspan></text>
+  </g>
+</svg>

@@ -259,3 +259,29 @@
     display: block;
     /* Remove extra space below image */
 }
+
+.__bg {
+    background-image: url("/images/school/education-bg.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#vision_of_daily_ten_school {
+    background-image: url("/images/school/education-bg.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @apply p-4 min-h-96;
+}
+
+#campus {
+    .campus-list {
+        @apply flex flex-col items-center gap-6 p-4;
+        @apply bg-accent/50 rounded-lg text-center;
+
+        h3 {
+            @apply text-xl font-bold;
+        }
+    }
+}
