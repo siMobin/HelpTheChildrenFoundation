@@ -76,6 +76,9 @@ export default function Header() {
                   <ListItem href="/health" title="Health & Nutrition">
                     Ensuring well-being for our students.
                   </ListItem>
+                  <ListItem href="/heart-foundation" title="Heart Foundation">
+                    Providing compassionate care for those in need.
+                  </ListItem>
                   <ListItem href="/empowerment" title="Youth Empowerment">
                     Building future leaders.
                   </ListItem>
