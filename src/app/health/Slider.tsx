@@ -18,7 +18,7 @@ const Slider = () => {
         spaceBetween={0}
         slidesPerView={1}
         pagination={{ clickable: true }}
-        autoplay={{ delay: 5999000 }}
+        autoplay={{ delay: 5000 }}
         loop={true}
         className="h-[30dvh] md:h-[50dvh] lg:h-[calc(100dvh-4.5rem)] w-full"
       >
@@ -29,6 +29,8 @@ const Slider = () => {
               alt=""
               loading="lazy"
               className="h-full"
+              data-aos="fade-up"
+              data-aos-duration="1000"
             />
 
             <img
@@ -115,7 +117,7 @@ const Slider = () => {
                     </span> */}
                     <h1 className="ml-6 mt-8 text-5xl font-semibold leading-14">
                       <span className="font-bold">Hunger &nbsp;</span>
-                      is not just a food issue, it's a&nbsp;
+                      is not just a food issue, it&apos;s a&nbsp;
                       <span className="font-bold">human&nbsp;</span>
                       right issue.
                     </h1>

@@ -70,7 +70,7 @@ export default function Header() {
               <NavigationMenuTrigger>Programs</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                  <ListItem href="/education" title="Education Program">
+                  <ListItem href="/education" title="Daily Ten School">
                     Providing quality education to underprivileged children.
                   </ListItem>
                   <ListItem href="/health" title="Health & Nutrition">
@@ -78,6 +78,9 @@ export default function Header() {
                   </ListItem>
                   <ListItem href="/heart-foundation" title="Heart Foundation">
                     Providing compassionate care for those in need.
+                  </ListItem>
+                  <ListItem href="/gohiner-alo" title="Gohiner Alo">
+                    Empower women through self-sustaining skills.
                   </ListItem>
                   <ListItem href="/empowerment" title="Youth Empowerment">
                     Building future leaders.

@@ -60,6 +60,7 @@ export default function Health() {
               alt=""
               loading="lazy"
               className="h-full px- pt-8"
+              data-aos="fade-up"
             />
           </div>
 
@@ -69,9 +70,9 @@ export default function Health() {
             </h1>
 
             <p className="text-justify">
-              Due to an esophageal problem, Jisan's father has been sick for the
-              past eight months. Unable to work because of his illness, the
-              family is burdened with financial hardship. Despite these
+              Due to an esophageal problem, Jisan&apos;s father has been sick
+              for the past eight months. Unable to work because of his illness,
+              the family is burdened with financial hardship. Despite these
               struggles, Jisan has arrived at school with his mother to take his
               admission test, leaving his ailing father in the hospital. Though
               the family is plagued by financial difficulties, this young
@@ -86,8 +87,8 @@ export default function Health() {
               afford treatment up close.
               <br />
               <br />
-              May Jisan's dream come true. The courage to dream is the first
-              step to overcoming poverty.
+              May Jisan&apos;s dream come true. The courage to dream is the
+              first step to overcoming poverty.
             </p>
           </div>
         </div>

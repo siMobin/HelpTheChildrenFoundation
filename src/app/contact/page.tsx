@@ -18,12 +18,12 @@ export default function Contact() {
             your response time commitment and highlight your team&apos;s
             readiness to help.
           </p>
-          <span className="flex gap-4">
+          <span className="flex gap-4 items-center">
             <MapPin size={16} className="" />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            repellendus cumque repudiandae est ipsam, ipsum perspiciatis animi
-            eligendi quis sit tempore alias pariatur, eveniet magni nisi, totam
-            dolor reiciendis eos?
+            <address>
+              74/1-B, Malibagh Chowdhurypara, Malibadh, Dhaka-1219, Dhaka,
+              Bangladesh
+            </address>
           </span>
           <Link href="tel:" className="inline-flex gap-2 items-center">
             <PhoneCall size={16} />
@@ -31,7 +31,10 @@ export default function Contact() {
             <br />
             +8802222228165
           </Link>
-          <Link href="mailto:" className="inline-flex gap-2 items-center">
+          <Link
+            href="mailto:info@hcf.com"
+            className="inline-flex gap-2 items-center"
+          >
             <Mail size={16} />
             info@hcf.com
           </Link>

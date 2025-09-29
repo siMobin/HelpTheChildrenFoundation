@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { AOSInit } from "@/Components/AOSInit";
+import { AOSInit } from "@/components/AOSInit";
 import "aos/dist/aos.css";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({
         <AOSInit />
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

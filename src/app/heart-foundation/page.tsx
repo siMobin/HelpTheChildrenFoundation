@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ImageSlider from "./ImageSlider";
 
 export default function HeartFoundation() {
   return (
@@ -46,11 +47,7 @@ export default function HeartFoundation() {
             </p>
           </div>
           <div className="md:w-1/2">
-            <img
-              src="/images/health/b_a_post.jpg"
-              alt="Community Health"
-              className="rounded-lg shadow-lg"
-            />
+            <ImageSlider />
           </div>
         </div>
       </section>
@@ -62,18 +59,31 @@ export default function HeartFoundation() {
       <section className="what-we-do bg-muted/50">
         <div className="div1">
           {/* 1 */}
-          <img src="/images/health/asset-11.jpg" alt="" />
+          <img
+            src="/images/health/asset-11.jpg"
+            alt="Help The Children Foundation"
+          />
         </div>
         <div className="div2">
-          {/* 2 */} <img src="/images/health/asset-5.jpg" alt="" />
+          {/* 2 */}{" "}
+          <img
+            src="/images/health/asset-13.jpg"
+            alt="Help The Children Foundation"
+          />
         </div>
         <div className="div3">
           {/* 3 */}
-          <img src="/images/health/asset-5.jpg" alt="" />
+          <img
+            src="/images/health/asset-14.jpg"
+            alt="Help The Children Foundation"
+          />
         </div>
         <div className="div4">
           {/* 4 */}
-          <img src="/images/health/asset-5.jpg" alt="" />
+          <img
+            src="/images/health/asset-15.jpeg"
+            alt="Help The Children Foundation"
+          />
         </div>
         <div className="div6">
           {/* 6 */}
@@ -109,7 +119,10 @@ export default function HeartFoundation() {
         </div>
         <div className="div8">
           {/* 8 */}
-          <img src="/images/health/asset-5.jpg" alt="" />
+          <img
+            src="/images/health/asset-12.jpg"
+            alt="Help The Children Foundation"
+          />
         </div>
       </section>
 

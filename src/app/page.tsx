@@ -11,12 +11,12 @@ export default function Home() {
       <Slider />
 
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-18 max-h-min relative bg-primary text-white">
-        <div className="shadow-2xl">
+        <div className="shado flex justify-center">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Li6mpF-uNk6b2Pt1X_Co_hsj-aKa_j9o8RWFH-Uuc6fp1bla2dEVonP2aHnXH30sV1A&usqp=CAU"
-            alt=""
+            src="\images\sponsor-a-child.png"
+            alt="sponsor a child"
             loading="lazy"
-            className="w-full h-full max-h-[60dvh] object-cover"
+            className="w-auto h-full max-h-[60dvh] object-cover pt-4"
             data-aos="fade-right"
           />
         </div>

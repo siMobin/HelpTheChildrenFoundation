@@ -25,25 +25,33 @@ export default function Education() {
       {/* Section Title */}
       <section
         id="vision_of_daily_ten_school"
-        className="grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-10 text-justify text-white text-lg"
+        className="grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-10 text-justify text-white text-lg max-w-full overflow-clip"
       >
         <div className="campus-list">
           <img
             src="/images/school/daily_ten_school.svg"
             alt=""
             loading="lazy"
+            data-aos="zoom-in"
           />
           <p>
-            Undoubtedly, today's children represent tomorrow's bright potential.
-            Ensuring their human rights is paramount, with education being a
-            fundamental necessity. The mission of Daily Ten School is to prepare
-            homeless and impoverished children for a brighter future, thereby
-            contributing to our country's perfect literacy rate. Alongside
-            education, nutrition is of significant concern and is prioritized
-            accordingly.
+            Undoubtedly, today&apos;s children represent tomorrow&apos;s bright
+            potential. Ensuring their human rights is paramount, with education
+            being a fundamental necessity. The mission of Daily Ten School is to
+            prepare homeless and impoverished children for a brighter future,
+            thereby contributing to our country&apos;s perfect literacy rate.
+            Alongside education, nutrition is of significant concern and is
+            prioritized accordingly.
           </p>
         </div>
-        <img src="/images/school/education.svg" alt="" loading="lazy" />
+        <img
+          src="/images/school/education.svg"
+          alt="Daily Ten School"
+          loading="lazy"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          data-aos-delay="500"
+        />
       </section>
 
       <section className="flex justify-center  ">
@@ -54,6 +62,8 @@ export default function Education() {
               alt=""
               loading="lazy"
               className="w-[] px-4 pt-8"
+              data-aos="fade-up"
+              data-aos-duration="1000"
             />
           </div>
 
@@ -64,6 +74,7 @@ export default function Education() {
                 alt=""
                 loading="lazy"
                 className="w-[75%] px-4 pt-8"
+                data-aos="zoom-in"
               />
             </div>
             <h1 className="text-4xl font-bold text-center">
@@ -75,7 +86,7 @@ export default function Education() {
               exchange of food. Recognizing the interest of underprivileged and
               street children in education, the first formal school was
               established in Basabo in 2015. This marked the beginning of Daily
-              Ten School's journey. Additional campuses were subsequently
+              Ten School&apos;s journey. Additional campuses were subsequently
               launched in Madaripur in 2017 and Badda in 2019. Most recently, in
               January 2024, a new campus was inaugurated in Nandipara.
             </p>
@@ -93,12 +104,12 @@ export default function Education() {
             <span>Daily Ten School</span>
           </h1>
           <p className="text-xl text-justify">
-            The school's funds originated from a daily contribution of 10 BDT
-            per member, totaling 300 BDT monthly from Daily Ten members. This
-            collective effort, comprising 110 Daily Ten members, resulted in the
-            establishment of the first school campus. Additionally, impoverished
-            pupils receive ten benefits daily, hence the name "Daily Ten
-            School."
+            The school&apos;s funds originated from a daily contribution of 10
+            BDT per member, totaling 300 BDT monthly from Daily Ten members.
+            This collective effort, comprising 110 Daily Ten members, resulted
+            in the establishment of the first school campus. Additionally,
+            impoverished pupils receive ten benefits daily, hence the name
+            &quot;Daily Ten School.&quot;
           </p>
         </div>
 

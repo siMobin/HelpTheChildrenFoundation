@@ -25,11 +25,11 @@ const Slider = () => {
         <SwiperSlide>
           <div className="__s_container">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNFq5tDThRbaJjEyP_ox4UkYsfUNkHyj0cPPo_FwmHWN0aNF-200oTa2YKONA4C39IE2w&usqp=CAU"
-              alt="Dummy Image 1"
+              src="/images/asset-11.png"
+              alt="Daily Ten School"
               className="w-full h-full object-cover"
             />
-            <div className="__slider">
+            {/* <div className="__slider">
               <div className="flex flex-col gap-4 items-center">
                 <p className="text-white text-4xl font-bold text-center">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -38,14 +38,14 @@ const Slider = () => {
                 </p>
                 <Button>Learn More</Button>
               </div>
-            </div>
+            </div> */}
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="__s_container">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCJW2sb3cMcE0cexkiGlXQ2Gih0gKRc6MSCA&s"
-              alt="Dummy Image 2"
+              src="images/asset-12.svg"
+              alt="Daily Ten School"
               className="w-full h-full object-cover"
             />
             {/* <div className="__slider">
@@ -56,25 +56,13 @@ const Slider = () => {
         <SwiperSlide>
           <div className="__s_container">
             <img
-              src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="Dummy Image 3"
+              src="images/asset-21.svg"
+              alt="Daily Ten School"
               className="w-full h-full object-cover"
             />
-            <div className="__slider">
+            {/* <div className="__slider">
               <p className="text-white text-4xl font-bold">Dummy Text 3</p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="__s_container">
-            <img
-              src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="Dummy Image 4"
-              className="w-full h-full object-cover"
-            />
-            <div className="__slider">
-              <p className="text-white text-4xl font-bold">Dummy Text 4</p>
-            </div>
+            </div> */}
           </div>
         </SwiperSlide>
       </Swiper>

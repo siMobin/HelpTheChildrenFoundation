@@ -27,6 +27,8 @@ export default function Donate() {
             src="/images/donate/donate.png"
             alt="hcf"
             loading="lazy"
+            data-aos="fade-up"
+            data-aos-duration="1000"
             className="h-full object-bottom object-fill px-4 pt-4 col-span-1 md:col-span-2"
           />
           {/* </div> */}
