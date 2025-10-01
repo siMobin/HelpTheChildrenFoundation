@@ -77,13 +77,22 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-4 text-center md:text-left">
             <div className="mb-6 inline-block relative">
               <div className="relative z-10">
-                <Link href="/" className="inline-block">
+                <Link href="/" className="inline-flex gap-2">
                   <Image
                     src="/icon.svg"
                     alt="Help The Children Foundation"
-                    width={120}
+                    width={80}
                     height={60}
                     className="rounded-lg transform transition-transform "
+                  />
+                  <Image
+                    src="/logo-text.svg"
+                    alt="Help The Children Foundation"
+                    width={220}
+                    height={160}
+                    className="rounded-lg transform transition-transform "
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
                   />
                 </Link>
               </div>

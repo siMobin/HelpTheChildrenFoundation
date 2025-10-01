@@ -33,6 +33,7 @@ export default function Education() {
             alt=""
             loading="lazy"
             data-aos="zoom-in"
+            className="w-[70%] "
           />
           <p>
             Undoubtedly, today&apos;s children represent tomorrow&apos;s bright

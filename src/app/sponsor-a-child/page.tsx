@@ -13,6 +13,7 @@ import {
   NotebookPen,
   UserPen,
 } from "lucide-react";
+import Unsponsored from "@/components/Unsponsored";
 
 export default function SponsorAChild() {
   const [formData, setFormData] = useState({
@@ -202,6 +203,11 @@ Additional Info: Please process this sponsorship request.
             </Button>
           </div>
         </form>
+      </section>
+
+      <section>
+        <h1 className="text-center">Unsponsored Children</h1>
+        <Unsponsored />
       </section>
     </main>
   );

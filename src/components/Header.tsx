@@ -20,7 +20,7 @@ export default function Header() {
       <div className="container flex h-14 items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-3">
-          <img src="/icon.svg" className="h-12" alt="Help" />
+          <img src="/icon-white.svg" className="h-12" alt="Help" />
           <img src="/logo_text.svg" className="h-8 " alt="Help" />
         </Link>
 
