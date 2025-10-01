@@ -10,7 +10,7 @@ interface Student {
   photo_url: string;
   class: string;
   gender: string;
-  present_address: string;
+  campus: string;
   // Add other student properties as needed
 }
 
@@ -86,7 +86,7 @@ const Unsponsored: React.FC = () => {
                       {student.gender}
                     </span>
                   </div>
-                  <p>{student.present_address}</p>
+                  <p>{student.campus}&nbsp;Campus</p>
                 </div>
               </SpotlightCard>
             </div>

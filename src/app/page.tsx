@@ -3,7 +3,8 @@ import Header from "@/components/Header";
 import Slider from "@/components/Slider";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import Activities from "./Activities";
+import RegularSchoolActivities from "@/components/RegularSchoolActivities";
+import { ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
@@ -38,19 +39,29 @@ export default function Home() {
       </section>
 
       {/*  */}
+      <section className="space-y-4 mb-4">
+        <div className="text-center space-y-4">
+          <h1 className="">Regular School Activities</h1>
+          <p className="text-xl">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit
+          </p>
+        </div>
 
-      <div className="text-center space-y-4">
-        <h1 className="text-6xl font-bold">Regular School Activities</h1>
-        <p className="text-xl">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit
-        </p>
-      </div>
-
-      <Activities />
+        <RegularSchoolActivities showCount={6} />
+        <div className="flex justify-center items-center">
+          <Link
+            href="/services"
+            className="animate-shake-x inline-flex justify-center mt-12 items-center gap-2 bg-accent/50  border border-primary/50 hover:bg-accent transition-colors duration-300 px-2 py-1 rounded-full "
+          >
+            See More
+            <ArrowRight size={20} className="" />
+          </Link>
+        </div>
+      </section>
 
       {/*  */}
 
-      <section className="max-w-full bg-foreground">
+      {/* <section className="max-w-full bg-foreground">
         <div className="w-4/5 md:w-3/5 mx-auto text-center relative z-20 pt-10 sm:pt-6 md:pt-12">
           <h2 className="text-2xl md:text-4xl font-bold font-heading text-center capitalize text-white">
             Volunteerism
@@ -95,7 +106,7 @@ export default function Home() {
             </Button>
           </Link>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

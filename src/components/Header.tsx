@@ -39,15 +39,21 @@ export default function Header() {
               <NavigationMenuContent>
                 <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                   <li className="row-span-4">
-                    <NavigationMenuLink asChild>
+                    <NavigationMenuLink
+                      asChild
+                      className="flex items-center justify-center"
+                    >
                       <Link
-                        className="bg-transparent hover:bg-transparent"
+                        className="bg-transparent hover:bg-transparent flex flex-col items-center justify-center gap-2"
                         href="/"
                       >
-                        <div className="mb-2 text-lg font-medium">
-                          <img src="/icon.svg" alt="" className="" />
-                        </div>
-                        <img src="/logo_text_bottom_color.svg" alt="" />
+                        <img src="/icon.svg" alt="" className="max-w-24" />
+
+                        <img
+                          src="/logo_text_bottom_color.svg"
+                          alt="HCF"
+                          className="max-w-24"
+                        />
                       </Link>
                     </NavigationMenuLink>
                   </li>
@@ -57,9 +63,7 @@ export default function Header() {
                   <ListItem href="/team" title="Our Team">
                     Meet the people behind HCF.
                   </ListItem>
-                  <ListItem href="/impact" title="Our Impact">
-                    See the difference we make.
-                  </ListItem>
+
                   <ListItem href="/faq" title="FAQ">
                     Find answers to common questions.
                   </ListItem>
@@ -84,9 +88,6 @@ export default function Header() {
                   </ListItem>
                   <ListItem href="/empowerment" title="Youth Empowerment">
                     Building future leaders.
-                  </ListItem>
-                  <ListItem href="/volunteer" title="Volunteer Program">
-                    Join us and make a difference.
                   </ListItem>
                   <ListItem href="/gallery" title="Gallery">
                     Explore our moments and milestones.

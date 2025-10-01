@@ -144,6 +144,22 @@
     --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
+@theme {
+    --animate-shake-x: shakeX 1.0s ease-in-out infinite;
+
+    @keyframes shakeX {
+
+        0%,
+        100% {
+            transform: translateX(0);
+        }
+
+        50% {
+            transform: translateX(-5px);
+        }
+    }
+}
+
 @layer base {
     * {
         @apply border-border outline-ring/50;

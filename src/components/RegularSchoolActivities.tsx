@@ -33,7 +33,11 @@ const ActivitiesCard: React.FC<ActivitiesCardProps> = ({
   );
 };
 
-const Activities: React.FC = () => {
+type ActivitiesProps = {
+  showCount?: number;
+};
+
+const RegularSchoolActivities: React.FC<ActivitiesProps> = ({ showCount }) => {
   const activitiesData = [
     {
       title: "NCTB Based Education",
@@ -73,19 +77,21 @@ const Activities: React.FC = () => {
   ];
 
   return (
-    <section className="relative activities-areas bg-white z-10 py-[80px]">
+    <section className="relative activities-areas bg-white z-10 py-">
       <div className="mx-4 lg:mx-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {activitiesData.map((item, index) => (
-          <ActivitiesCard
-            key={index}
-            title={item.title}
-            description={item.description}
-            delay={index * 100}
-          />
-        ))}
+        {activitiesData
+          .slice(0, showCount || activitiesData.length)
+          .map((item, index) => (
+            <ActivitiesCard
+              key={index}
+              title={item.title}
+              description={item.description}
+              delay={index * 100}
+            />
+          ))}
       </div>
     </section>
   );
 };
 
-export default Activities;
+export default RegularSchoolActivities;

@@ -19,7 +19,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Help The Children Foundation",
   description: "Help children to rewrite their future...",
-  viewport: "width=device-width, initial-scale=1.0",
   authors: [{ name: "Help The Children Foundation", url: "https://hcfbd.org" }],
   creator: "siMobin",
   publisher: "Help The Children Foundation",

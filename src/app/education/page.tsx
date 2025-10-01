@@ -1,4 +1,7 @@
+import RegularSchoolActivities from "@/components/RegularSchoolActivities";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Education() {
   const campuses = [
@@ -142,6 +145,27 @@ export default function Education() {
             />
           </div>
         </div>
+      </section>
+
+      {/*  */}
+      <section className="space-y-4 my-8">
+        <div className="text-center space-y-4">
+          <h1 className="">Regular School Activities</h1>
+          <p className="text-xl">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit
+          </p>
+        </div>
+
+        <RegularSchoolActivities />
+        {/* <div className="flex justify-center items-center">
+          <Link
+            href="/services"
+            className="animate-shake-x inline-flex justify-center mt-12 items-center gap-2 bg-accent/50  border border-primary/50 hover:bg-accent transition-colors duration-300 px-2 py-1 rounded-full "
+          >
+            See More
+            <ArrowRight size={20} className="" />
+          </Link>
+        </div> */}
       </section>
 
       <h1 className="text-4xl font-bold text-center">
