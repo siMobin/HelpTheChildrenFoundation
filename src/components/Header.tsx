@@ -77,11 +77,11 @@ export default function Header() {
                   <ListItem href="/education" title="Daily Ten School">
                     Providing quality education to underprivileged children.
                   </ListItem>
-                  <ListItem href="/health" title="Health & Nutrition">
-                    Ensuring well-being for our students.
+                  <ListItem href="/food-support" title="Monthly Food Support">
+                    Providing monthly family food support.
                   </ListItem>
-                  <ListItem href="/heart-foundation" title="Heart Foundation">
-                    Providing compassionate care for those in need.
+                  <ListItem href="/health-aid" title="Health Aid">
+                    Help children to fight against heart & blood cancer.
                   </ListItem>
                   <ListItem href="/gohiner-alo" title="Gohiner Alo">
                     Empower women through self-sustaining skills.
@@ -91,6 +91,9 @@ export default function Header() {
                   </ListItem>
                   <ListItem href="/gallery" title="Gallery">
                     Explore our moments and milestones.
+                  </ListItem>
+                  <ListItem href="/child-awareness" title="Child Awareness">
+                    Counseling and therapy services.
                   </ListItem>
                 </ul>
               </NavigationMenuContent>

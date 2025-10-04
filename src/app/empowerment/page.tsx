@@ -1,18 +1,11 @@
-import Image from "next/image";
-import Header from "@/components/Header";
-import Slider from "@/components/Slider";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import { Separator } from "@/components/ui/separator";
 import data from "./empowerment.json";
-import { Quote } from "lucide-react";
 import TextType from "@/components/TextType";
 
 export default function Empowerment() {
   return (
     <main className="space-y-4">
       <section className="w-full grid grid-cols-1 md:grid-cols-3 bg-secondary">
-        <div className="col-span-2 flex justify-center items-center text-justify flex-col relative">
+        <div className="col-span-2 flex justify-center items-center flex-col relative">
           {/* <h2 className="text-white text-4xl font-bold max-w-xl  relative">
             Everyone has special talents. It is our duty & privilege to find
             these talents & to adapt our lesson to best implement them.
@@ -24,12 +17,12 @@ export default function Empowerment() {
             text={[
               "Everyone has special talents. It is our duty & privilege to find these talents & to adapt our lesson to best implement them.",
             ]}
-            typingSpeed={75}
+            typingSpeed={100}
             pauseDuration={1500}
             showCursor={true}
             cursorCharacter="|"
             loop={false}
-            className="text-white text-4xl font-bold max-w-xl  relative"
+            className="text-white text-4xl font-bold max-w-xl !text-left relative"
           />
         </div>
         <div className="relative">

@@ -92,16 +92,18 @@ Additional Info: Please process this sponsorship request.
       </section>
 
       {/* Sponsorship Benefits */}
-      <section className="p-4 bg-foreground text-background">
-        <div className="p-4 space-y-4 text-center">
-          <h1>100 BDT</h1>
-          <p className="text-lg">
-            Your monthly contribution helps provide life-changing, essential
-            needs to your sponsored child and his or her entire community
-          </p>
+      <section className="p-4 bg-secondary text-background">
+        <div className="p-4 space-y-4 text-center flex flex-col items-center">
+          <div className="max-w-2xl">
+            <h1>1500 BDT</h1>
+            <p className="text-lg">
+              Your monthly contribution helps provide life-changing, essential
+              needs to your sponsored child and his or her entire community
+            </p>
+          </div>
         </div>
 
-        <div className="sponsor-a-child-properties grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
+        <div className="sponsor-a-child-properties grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 mt-6 font-semibold">
           <div className="flex flex-col items-center gap-2">
             <GraduationCap />
             <span>Quality Education</span>

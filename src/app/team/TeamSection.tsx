@@ -37,18 +37,17 @@ const TeamCard: React.FC<TeamMember> = ({
         </div>
 
         {/* Name */}
-        <h3 className="text-2xl font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">
+        <h3 className="text-2xl font-semibold  group-hover:text-primary transition-colors duration-300">
           {name}
         </h3>
 
-        {/* Position */}
-        <p className="mt-1 text-base text-gray-600">{position}</p>
-
         {/* Divider */}
-        <div className="w-12 h-1 bg-primary/40 rounded-full my-4 group-hover:bg-primary transition-colors duration-300"></div>
+        <div className="w-12 h-1 bg-primary/40 rounded-full my-2 group-hover:bg-primary transition-colors duration-300"></div>
+        {/* Position */}
+        <p className="mt-1 text-base ">{position}</p>
 
         {/* Education */}
-        <p className="text-sm text-gray-500 leading-relaxed">{education}</p>
+        {/* <p className="text-sm  leading-relaxed">{education}</p> */}
       </CardContent>
 
       {/* Glow effect on hover */}
@@ -101,7 +100,7 @@ const TeamSection: React.FC = () => {
       <div className="container w-5/6 2xl:w-2/3 mx-auto">
         {/* Section Title */}
         <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">
-          Meet Our Other <span className="text-primary">Team</span> Members
+          Meet Our <span className="text-primary">Team</span> Members
         </h2>
 
         {/* Team Grid */}

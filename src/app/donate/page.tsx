@@ -1,10 +1,3 @@
-import Image from "next/image";
-import Header from "@/components/Header";
-import Slider from "@/components/Slider";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import { Separator } from "@/components/ui/separator";
-
 export default function Donate() {
   return (
     <main className="space-y-4">

@@ -54,9 +54,9 @@ const Slider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="__s_container">
+          <div className="__s_container bg-[url(/images/school/education-bg.svg)] bg-cover bg-no-repeat relative">
             <img
-              src="images/asset-21.svg"
+              src="images/asset-22.png"
               alt="Daily Ten School"
               className="w-full h-full object-cover"
             />

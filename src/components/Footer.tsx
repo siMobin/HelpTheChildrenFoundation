@@ -9,9 +9,6 @@ import {
   Instagram,
   Linkedin,
   Heart,
-  Mail,
-  Phone,
-  MapPin,
   Star,
   Sun,
   Moon,
@@ -23,7 +20,7 @@ const Footer = () => {
     <footer className="relative pt-20 pb-10 mt-8 overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-accent/10 to-primary/5">
-        <div className="absolute top-0 left-0 w-full h-full footer-bg">
+        <div className="absolute top-0 left-0 w-full h-full footer-bg opacity-10">
           <Star
             className="absolute animate-pulse text-primary top-10 left-[10%]"
             size={20}
@@ -133,7 +130,7 @@ const Footer = () => {
                           href={link.href}
                           className="text-muted-foreground hover:text-primary transition-colors inline-flex items-center"
                         >
-                          <span className="mr-2">{link.icon}</span>
+                          {/* <span className="mr-2">{link.icon}</span> */}
                           {link.text}
                         </Link>
                       </li>
@@ -151,6 +148,7 @@ const Footer = () => {
           <div
             className="relative bg-card/90 backdrop-blur rounded-2xl p-8 text-center transform  transition-all border border-border"
             data-aos="flip-down"
+            data-aos-duration="1000"
           >
             <div className="inline-block mb-4">
               <Heart className="text-secondary" size={32} fill="currentColor" />
@@ -176,10 +174,9 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom */}
-        <div className="mt-16 text-center">
-          <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} Help The Children Foundation. Made with
-            💖 for children everywhere.
+        <div className="mt-8 text-center">
+          <p className="text-muted-foreground text-xs">
+            © {new Date().getFullYear()} Help The Children Foundation
           </p>
         </div>
       </div>
@@ -275,7 +272,7 @@ const navigationSections = [
     title: "Get in Touch",
     links: [
       {
-        text: "74/1-B, Malibagh Chowdhurypara, Malibadh",
+        text: "74/1-B, Malibagh Chowdhurypara,",
         href: "/contact",
         icon: "📍",
       },
