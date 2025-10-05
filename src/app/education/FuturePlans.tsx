@@ -18,22 +18,22 @@ const FuturePlans = () => {
           </h2>
         </div>
 
-        <div className="lg:grid lg:grid-cols-2 lg:gap-12">
-          <div className="lg:col-span-2 mb-8">
-            <p className="text-lg text-justify leading-relaxed">
-              The way for a brighter future for our students. After completing
-              the 8th grade, students will be guided into three distinct
-              pathways based on their merit and dedication. This approach
-              ensures that each student can maximize their potential and prepare
-              for a successful future.
-            </p>
-          </div>
+        <div className="lg:col-span-2 mb-8">
+          <p className="text-lg text-center leading-relaxed">
+            The way for a brighter future for our students. After completing the
+            8th grade, students will be guided into three distinct pathways
+            based on their merit and dedication. This approach ensures that each
+            student can maximize their potential and prepare for a successful
+            future.
+          </p>
+        </div>
 
+        <div className="grid grid-cols-1 lg:lg:grid-cols-3 gap-8">
           <div className="mb-8 lg:mb-0">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <h3 className="text-2xl font-bold  mb-4">
               # Agradoot (Pioneers: Highly Talented & Dedicated Students)
             </h3>
-            <p className="text-justify leading-relaxed">
+            <p className="text-justify leading-relaxed text-lg">
               Students who demonstrate exceptional academic performance and
               dedication will continue their studies under our direct
               supervision at our residential center. They will complete their
@@ -49,10 +49,10 @@ const FuturePlans = () => {
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <h3 className="text-2xl font-bold  mb-4">
               # Udioman (Emerging: Less Attentive & Academically Weak Students)
             </h3>
-            <p className="text-justify leading-relaxed">
+            <p className="text-justify leading-relaxed text-lg">
               For students who struggle academically or show less interest in
               traditional studies, we will provide technical and vocational
               training at our residential center. Our goal is to equip them with
@@ -64,29 +64,29 @@ const FuturePlans = () => {
               jobs both locally and internationally.
             </p>
           </div>
-        </div>
 
-        <div className="mt-12 pt-8 border-t border-gray-200">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            # Agrosor (Advancing: Average-performing Students)
-          </h3>
-          <p className="text-justify leading-relaxed">
-            Students with moderate academic performance will be enrolled in
-            nearby schools for their 9th-grade education after completing the
-            8th grade. Daily Ten School will cover all their educational
-            expenses and provide continuous monitoring to ensure they do not
-            drop out due to financial hardships. We will focus on their personal
-            development and future prospects by offering guidance and necessary
-            support.
-          </p>
-          <p className="mt-4 text-justify leading-relaxed">
-            The core objective of this initiative is to educate and empower
-            every student according to their abilities, ensuring they become
-            self-sufficient and contribute to the development of the nation.
-            Daily Ten School firmly believes that with proper guidance and
-            opportunities, every child can bring positive change to their lives
-            and society.
-          </p>
+          <div className="">
+            <h3 className="text-2xl font-bold  mb-4">
+              # Agrosor (Advancing: Average-performing Students)
+            </h3>
+            <p className="text-justify leading-relaxed text-lg">
+              Students with moderate academic performance will be enrolled in
+              nearby schools for their 9th-grade education after completing the
+              8th grade. Daily Ten School will cover all their educational
+              expenses and provide continuous monitoring to ensure they do not
+              drop out due to financial hardships. We will focus on their
+              personal development and future prospects by offering guidance and
+              necessary support.
+            </p>
+            <p className="mt-4 text-justify leading-relaxed text-lg">
+              The core objective of this initiative is to educate and empower
+              every student according to their abilities, ensuring they become
+              self-sufficient and contribute to the development of the nation.
+              Daily Ten School firmly believes that with proper guidance and
+              opportunities, every child can bring positive change to their
+              lives and society.
+            </p>
+          </div>
         </div>
       </div>
     </section>

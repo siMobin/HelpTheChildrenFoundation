@@ -254,8 +254,9 @@ const navigationSections = [
     title: "Discover Our World",
     links: [
       { text: "About Us", href: "/about", icon: "🌟" },
-      { text: "Our Programs", href: "/education", icon: "📚" },
-      { text: "Success Stories", href: "/impact", icon: "🌈" },
+      { text: "Daily Ten School", href: "/education", icon: "📚" },
+      { text: "Monthly Food Support", href: "/food-support", icon: "🍔" },
+      { text: "Meet Our Team", href: "/team", icon: "🌈" },
       { text: "Gallery", href: "/gallery", icon: "🎨" },
     ],
   },
@@ -264,7 +265,6 @@ const navigationSections = [
     links: [
       { text: "Donate Now", href: "/donate", icon: "❤️" },
       { text: "Sponsor a Child", href: "/sponsor-a-child", icon: "🤝" },
-      { text: "Volunteer", href: "/team", icon: "🌟" },
       { text: "Contact Us", href: "/contact", icon: "✉️" },
     ],
   },
@@ -277,7 +277,8 @@ const navigationSections = [
         icon: "📍",
       },
       { text: "Dhaka, Bangladesh", href: "/contact", icon: "🏠" },
-      { text: "+880 123-456-7890", href: "tel:+880123456789", icon: "📞" },
+      { text: "+8801771744444", href: "tel:+8801771744444", icon: "📞" },
+      { text: "+8802222228165", href: "tel:+8802222228165", icon: "📞" },
       {
         text: "info@hcf.org",
         href: "mailto:info@hcf.org",

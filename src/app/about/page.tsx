@@ -63,9 +63,16 @@ export default function About() {
             {/* Card content */}
             <div className="text-left p-4 border border-dashed rounded-lg border-gray-300 hover:border-gray-500 hover:text-white duration-200 h-full">
               <h2 className="font-bold text-xl md:text-2xl uppercase mb-2">
-                Our Vision
+                Mission, Vision, and Values
               </h2>
-              <p className="whitespace-pre-line">
+              <p className="text-justify">
+                Our Foundation is committed to fostering a culture of empathy,
+                compassion, and solidarity among all individuals, regardless of
+                socioeconomic status or background. We believe in the power of
+                collective action to create a better world for our community.
+              </p>
+              <br />
+              <p className=" text-justify">
                 Our Foundation envisions a society free from all forms of
                 exploitation and discrimination, where every child has the
                 opportunity for education, and every youth has the opportunity
@@ -75,15 +82,13 @@ export default function About() {
           </div>
 
           <div className="relative overflow-clip bg-white group flex-col justify-start text-left p-4 rounded-lg shadow-lg z-10">
-            {/* Hover background effect */}
             <div className="absolute bg-primary  w-0 border-l-2 border border-primary h-full -z-10 left-0 top-0 duration-500 group-hover:w-full"></div>
 
-            {/* Card content */}
             <div className="text-left p-4 border border-dashed rounded-lg border-gray-300 hover:border-gray-500 hover:text-white duration-200 h-full">
               <h3 className="font-bold text-xl md:text-2xl uppercase mb-2">
-                Our Mission
+                Our Impact
               </h3>
-              <p className="whitespace-pre-line">
+              <p className=" text-justify">
                 Our Foundation is committed to fostering a culture of empathy,
                 compassion, and solidarity among all individuals, regardless of
                 socioeconomic status or background. We believe in the power of
@@ -94,13 +99,10 @@ export default function About() {
         </div>
       </section>
 
-      <section className="max-w-6xl flex items-center justify-center mx-auto relative mb-16">
+      {/* <section className="max-w-6xl flex items-center justify-center mx-auto relative mb-16">
         <div>
           <div className="relative overflow-clip bg-white group flex-col justify-start text-left p-4 rounded-lg shadow-lg z-10">
-            {/* Hover background effect */}
-            {/* <div className="absolute bg-primary  w-0 border-l-2 border border-primary h-full -z-10 left-0 top-0 duration-500 group-hover:w-full"></div> */}
-
-            {/* Card content */}
+            
             <div className="text-left p-4 border border-dashed rounded-lg border-gray-300 hover:border-gray-500 hover:text duration-200 h-full">
               <h3 className="font-bold text-xl text-center md:text-2xl uppercase mb-2">
                 Our Impact
@@ -114,7 +116,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

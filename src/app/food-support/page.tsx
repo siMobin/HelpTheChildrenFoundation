@@ -5,7 +5,7 @@ import Term from "./Term";
 export default function Health() {
   return (
     <main className="space-y-">
-      <Slider />
+      {/* <Slider /> */}
 
       {/* <div className="h-screen">
         <section className="grid h-full grid-cols-1 md:grid-cols-2">

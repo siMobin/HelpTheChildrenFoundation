@@ -297,7 +297,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    @apply p-4 min-h-96;
+    @apply p-4 md:p-16 min-h-96;
 }
 
 #campus {

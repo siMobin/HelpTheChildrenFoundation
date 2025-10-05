@@ -86,14 +86,14 @@ export default function Header() {
                   <ListItem href="/gohiner-alo" title="Gohiner Alo">
                     Empower women through self-sustaining skills.
                   </ListItem>
+                  <ListItem href="/child-awareness" title="Child Awareness">
+                    Counseling and therapy services.
+                  </ListItem>
                   <ListItem href="/empowerment" title="Youth Empowerment">
                     Building future leaders.
                   </ListItem>
                   <ListItem href="/gallery" title="Gallery">
                     Explore our moments and milestones.
-                  </ListItem>
-                  <ListItem href="/child-awareness" title="Child Awareness">
-                    Counseling and therapy services.
                   </ListItem>
                 </ul>
               </NavigationMenuContent>

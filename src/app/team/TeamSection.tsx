@@ -19,21 +19,21 @@ const TeamCard: React.FC<TeamMember> = ({
   delay,
 }) => {
   return (
-    <Card
-      data-aos="fade-up"
-      data-aos-duration="600"
-      data-aos-delay={delay}
-      className="group relative overflow-hidden rounded-3xl bg-white/80 backdrop-blur-sm shadow-md hover:shadow-2xl transition-all duration-500"
-    >
-      <CardContent className="p-8 flex flex-col items-center text-center">
+    <Card className="group relative overflow-hidden rounded-3xl bg-white/80 backdrop-blur-sm shadow-md hover:shadow-2xl transition-all duration-500">
+      <CardContent className="flex flex-col items-center text-center">
         {/* Profile Image */}
-        <div className="relative w-32 h-32 mb-6">
+        <div className="relative w-full aspect-square mb-6 overflow-clip">
           <Image
             src={image}
             alt={name}
             fill
-            className="rounded-full object-cover shadow-md border-4 border-white group-hover:scale-105 transition-transform duration-500"
+            className="w-full h-full object-cover shadow-md border-4 border-white group-hover:scale-105 transition-transform duration-500"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay={delay}
           />
+
+          <div className="absolute -bottom-8 left-0 h-18 bg-accent rounded-e-8xl w-full rotate-15 scale-150"></div>
         </div>
 
         {/* Name */}

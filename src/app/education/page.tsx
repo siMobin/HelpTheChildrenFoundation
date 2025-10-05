@@ -29,7 +29,7 @@ export default function Education() {
         id="vision_of_daily_ten_school"
         className="grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-10 text-justify text-white text-lg max-w-full overflow-clip"
       >
-        <div className="campus-list">
+        <div className="">
           <img
             src="/images/school/daily_ten_school.svg"
             alt=""
@@ -37,7 +37,7 @@ export default function Education() {
             data-aos="zoom-in"
             className="w-[70%] "
           />
-          <p>
+          <p className="">
             Undoubtedly, today&apos;s children represent tomorrow&apos;s bright
             potential. Ensuring their human rights is paramount, with education
             being a fundamental necessity. The mission of Daily Ten School is to
@@ -97,7 +97,7 @@ export default function Education() {
         </div>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 m-8">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 m-4 md:m-16">
         <div>
           <h1 className="text-4xl font-bold text-center">
             <span className="text-primary text-2xl">
@@ -167,9 +167,9 @@ export default function Education() {
         </div> */}
       </section>
 
-      <section>
+      {/* <section>
         <SchoolExpenseTable />
-      </section>
+      </section> */}
 
       <FuturePlans />
 
@@ -185,48 +185,6 @@ export default function Education() {
               <address>{campus.address}</address>
             </div>
           ))}
-        </div>
-      </section>
-
-      <section className="flex justify-center  mb-4 max-h- relative">
-        <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 overflow-clip shadow rounded-2xl max-w-5xl h-min">
-          <div className="bg-[url(/images/school/education-bg.svg)] bg-no-repeat bg-cover">
-            <img
-              src="/images/health/meet-jisan.png"
-              alt=""
-              loading="lazy"
-              className="h-full px- pt-8"
-              data-aos="fade-up"
-            />
-          </div>
-
-          <div className="flex flex-col gap-4 py-4 pr-4 justify-center">
-            <h1 className="text-4xl font-bold text-left border-l-24 border-primary">
-              Meet Md. Jisan
-            </h1>
-
-            <p className="text-justify">
-              Due to an esophageal problem, Jisan&apos;s father has been sick
-              for the past eight months. Unable to work because of his illness,
-              the family is burdened with financial hardship. Despite these
-              struggles, Jisan has arrived at school with his mother to take his
-              admission test, leaving his ailing father in the hospital. Though
-              the family is plagued by financial difficulties, this young
-              student is rich in talent and determination. Often, financial
-              constraints force gifted students like Jisan to drop out of
-              school, only to be found amidst the crowd of child laborers.
-              <br />
-              <br />
-              The power of dreams can conquer poverty. Jisan dreams of becoming
-              a doctor and providing free medical care to the poor and needy.
-              Perhaps he has witnessed the harsh reality of being unable to
-              afford treatment up close.
-              <br />
-              <br />
-              May Jisan&apos;s dream come true. The courage to dream is the
-              first step to overcoming poverty.
-            </p>
-          </div>
         </div>
       </section>
     </main>
