@@ -1,29 +1,55 @@
 "use client";
 
+import { MapPin, CalendarDays } from "lucide-react";
+
 const activities = [
   {
-    name: "Morning Assembly",
-    picture: "/images/health/assembly.jpg",
-    description:
-      "The morning assembly of a school is a vital ritual that sets the tone for the day ahead, fostering a sense of unity, discipline, and purpose among students and staff. The morning assembly also cultivates a sense of community and belonging, as students come together to recite pledges, sing the national anthem, or engage in other communal activities. Additionally, it serves as a time for reflection and motivation, as students and staff alike gather to start the day on a positive note, ready to embrace learning and growth. ",
-  },
-  {
-    name: "Hygiene Product Distribution",
-    picture: "/images/health/hygiene.jpg",
-    description:
-      "Hygiene products are crucial for underprivileged children as they play a significant role in maintaining their health and well-being. Access to basic items such as soap, toothpaste, and nail cutters can prevent the spread of diseases, reduce the risk of infections, and boost overall hygiene practices. For many underprivileged children, these products are often considered luxuries rather than necessities, leading to compromised health and self-esteem.",
-  },
-  {
-    name: "Regular Health Checkups",
-    picture: "/images/health/health.jpg",
-    description:
-      "At Daily Ten School, we believe that good health is the foundation of a child's success. Regular health checkups play a crucial role in safeguarding the well-being of underprivileged children by identifying and addressing health concerns at an early stage. Through preventive care and timely interventions, we ensure that students remain physically fit, enabling them to focus on their education without health-related obstacles.",
-  },
-  {
-    name: "Food Support Distribution",
+    name: "Monthly Family Food Support Distribution",
     picture: "/images/health/food-supply.jpg",
+    location: "Dhaka, Bangladesh",
+    date: "October 26, 2025",
     description:
-      "At Daily Ten School, we recognize that proper nutrition is essential for a child’s physical health, cognitive development, and academic performance. Many underprivileged children face food insecurity, which directly impacts their ability to focus and learn. To address this, we have implemented a Food Support Distribution Program, ensuring that our students receive the nourishment they need to thrive.",
+      "Our monthly food support program provides essential groceries to underprivileged families, ensuring they have access to nutritious meals. This initiative helps combat food insecurity and promotes the well-being of children and their families.",
+  },
+  {
+    name: "Monthly Family Food Support Distribution",
+    picture: "/images/health/food-supply.jpg",
+    location: "Chittagong, Bangladesh",
+    date: "November 15, 2025",
+    description:
+      "Providing vital food assistance to families in Chittagong, our program ensures consistent access to nutritious food, supporting health and stability for children and their communities.",
+  },
+  {
+    name: "Monthly Family Food Support Distribution",
+    picture: "/images/health/food-supply.jpg",
+    location: "Khulna, Bangladesh",
+    date: "December 10, 2025",
+    description:
+      "In Khulna, we deliver essential food supplies to vulnerable families each month, aiming to alleviate hunger and foster a healthier environment for children to grow and learn.",
+  },
+  {
+    name: "Monthly Family Food Support Distribution",
+    picture: "/images/health/food-supply.jpg",
+    location: "Sylhet, Bangladesh",
+    date: "January 20, 2026",
+    description:
+      "Our food support initiative in Sylhet focuses on delivering regular food packages to families in need, ensuring children receive the necessary nutrition for their development and academic success.",
+  },
+  {
+    name: "Monthly Family Food Support Distribution",
+    picture: "/images/health/food-supply.jpg",
+    location: "Rajshahi, Bangladesh",
+    date: "February 5, 2026",
+    description:
+      "Supporting families in Rajshahi, our program distributes monthly food aid to help reduce food insecurity and provide a stable foundation for children's health and educational pursuits.",
+  },
+  {
+    name: "Monthly Family Food Support Distribution",
+    picture: "/images/health/food-supply.jpg",
+    location: "Barisal, Bangladesh",
+    date: "March 12, 2026",
+    description:
+      "Through our food support program in Barisal, we ensure that underprivileged families receive consistent access to nutritious food, promoting better health outcomes and brighter futures for their children.",
   },
 ];
 
@@ -56,7 +82,18 @@ export default function Activities() {
               <h5 className="mb-2 text-xl md:text-2xl font-bold text-gray-900">
                 {activity.name}
               </h5>
-              {/* <p className="mb-1 font-semibold text-gray-700">{activity.title}</p> */}
+              <div className="flex items-center text-gray-600 mb-2 gap-2 truncate flex-wrap">
+                {activity.location && (
+                  <span className="flex items-center mr-4 text-secondary">
+                    <MapPin className="w-4 h-4 mr-1" /> {activity.location}
+                  </span>
+                )}
+                {activity.date && (
+                  <span className="flex items-center text-secondary">
+                    <CalendarDays className="w-4 h-4 mr-1" /> {activity.date}
+                  </span>
+                )}
+              </div>
               <p className="text-gray-700 text-justify">
                 {activity.description}
               </p>

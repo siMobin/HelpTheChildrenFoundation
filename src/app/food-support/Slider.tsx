@@ -43,7 +43,7 @@ const Slider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="__s_container bg-[url('/images/school/education-bg.svg')] bg-no-repeat bg-cover px-4">
-            <div className="parent">
+            <div className="gallery-in-food-support">
               <div className="div2">
                 {/* 2 */}
                 <img src="images/health/food-2.jpg" alt="" />

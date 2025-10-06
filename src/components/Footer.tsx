@@ -115,12 +115,21 @@ const Footer = () => {
           {/* Navigation Links - Playful Cards */}
           <div className="col-span-1 md:col-span-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {navigationSections.map((section) => (
+              {navigationSections.map((section, index) => (
                 <div
                   key={section.title}
-                  className="bg-card/80 backdrop-blur-sm rounded-xl p-6 transform hover:-translate-y-1 transition-all hover:shadow-lg border border-border"
+                  className={`bg-card/80 backdrop-blur-sm rounded-xl p-6 transform hover:-translate-y-1 transition-all hover:shadow-lg border border-border relative overflow-hidden group`}
                 >
-                  <h3 className="text-lg font-bold mb-4 text-primary">
+                  <div
+                    className={`absolute inset-0 transition-all duration-500 ease-in-out translate-y-full group-hover:translate-y-0 ${
+                      index === 0
+                        ? "bg-primary/10"
+                        : index === 1
+                        ? "bg-secondary/10"
+                        : "bg-accent/10"
+                    }`}
+                  ></div>
+                  <h3 className="relative z-10 text-lg font-bold mb-4 text-primary">
                     {section.title}
                   </h3>
                   <ul className="space-y-2">

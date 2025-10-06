@@ -51,7 +51,7 @@ export default function Health() {
       </div> */}
 
       <section>
-        <div className="bg-accent/20 grid grid-cols-1 md:grid-cols-2 gap-8 p-4 min-h-screen">
+        <div className="bg-accent/10 grid grid-cols-1 md:grid-cols-2 gap-8 p-4 min-h-screen">
           <img
             src="\images\health\grocery-1.png"
             alt=""
@@ -63,11 +63,19 @@ export default function Health() {
             <h2 className="text-4xl font-semibold">
               Monthly Family Food Support Distribution
             </h2>
-            <h3 className="text-4xl font-">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-              inventore quasi necessitatibus ducimus animi corrupti iste sed
-              laborum accusamus tempora?
-            </h3>
+            <p className="text-xl text-justify">
+              To provide consistent and sustainable food support to
+              underprivileged families and individuals, ensuring that their
+              basic nutritional needs are met on a regular basis. Our goal is to
+              improve overall health and well-being, reduce hunger and
+              malnutrition, and enhance the quality of life for those in need.
+              Through our initiatives, we strive to bring hope, security, and
+              dignity to vulnerable communities, empowering them to live
+              healthier, more productive lives. By addressing immediate food
+              needs and fostering long-term support, we aim to create a
+              compassionate and caring society where everyone has access to
+              essential nourishment and the opportunity to thrive.
+            </p>
           </span>
         </div>
       </section>
