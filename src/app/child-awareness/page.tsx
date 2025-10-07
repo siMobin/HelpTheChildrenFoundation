@@ -1,16 +1,12 @@
 import Image from "next/image";
-import {
-  AlertTriangle,
-  HeartHandshake,
-  ShieldCheck,
-} from "lucide-react";
+import { AlertTriangle, HeartHandshake, ShieldCheck } from "lucide-react";
 
 const ChildAwarenessPage = () => {
   return (
-    <div className="">
-      <div className="container mx-auto px-4 py-8">
+    <div className="max-w-full overflow-clip">
+      <div className="">
         {/* Hero Section */}
-        <section className="relative h-[550px] rounded-xl overflow-hidden flex items-center text-primary-foreground">
+        <section className="relative h-[550px] rounded-xl overflow-hidden flex items-center text-primary-foreground p-4 md:p-8 lg:p-12 m-4">
           <Image
             src="/images/health/health.jpg"
             alt="Children in a workshop"
@@ -28,7 +24,7 @@ const ChildAwarenessPage = () => {
         </section>
 
         {/* Your Path to Wellness Section */}
-        <section className="py-16 md:py-24">
+        <section className="p-4 md:p-8 lg:p-12">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="max-w-md">
               <h2 className="text-4xl md:text-5xl font-bold leading-relaxed">
@@ -54,7 +50,7 @@ const ChildAwarenessPage = () => {
         </section>
 
         {/* Services Section */}
-        <section className="pb-16 md:pb-24">
+        <section className="p-4 md:p-8 lg:p-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <ServiceCard
               tags={["Parents", "Community"]}
@@ -87,8 +83,62 @@ const ChildAwarenessPage = () => {
           </div>
         </section>
 
+        <section className="container_section">
+          <div className="div-1">
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-1 gap-8 text-left">
+              <div className="bg-card/50 p-8 rounded-xl shadow-sm">
+                <AlertTriangle className="h-10 w-10 text-destructive mb-4" />
+                <h3 className="text-2xl font-bold">Physical Signs</h3>
+                <ul className="mt-4 space-y-2 text-muted-foreground list-disc list-inside">
+                  <li>Unexplained injuries or bruises</li>
+                  <li>Poor hygiene or unattended appearance</li>
+                  <li>Frequent hunger or hoarding of food</li>
+                  <li>Untreated medical or dental issues</li>
+                </ul>
+              </div>
+              <div className="bg-card/50 p-8 rounded-xl shadow-sm">
+                <HeartHandshake className="h-10 w-10 text-primary mb-4" />
+                <h3 className="text-2xl font-bold">Behavioral Signs</h3>
+                <ul className="mt-4 space-y-2 text-muted-foreground list-disc list-inside">
+                  <li>Sudden changes in behavior or mood</li>
+                  <li>Withdrawal from friends or usual activities</li>
+                  <li>Aggression, anger, or hostility</li>
+                  <li>Fear of going home or to certain places</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="div-2">{/* Don't edit this division */}</div>
+
+          <div className="div-3">
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-1 gap-8 text-left">
+              <div className="bg-card/50 p-8 rounded-xl shadow-sm">
+                <HeartHandshake className="h-10 w-10 text-primary mb-4" />
+                <h3 className="text-2xl font-bold">Behavioral Signs</h3>
+                <ul className="mt-4 space-y-2 text-muted-foreground list-disc list-inside">
+                  <li>Sudden changes in behavior or mood</li>
+                  <li>Withdrawal from friends or usual activities</li>
+                  <li>Aggression, anger, or hostility</li>
+                  <li>Fear of going home or to certain places</li>
+                </ul>
+              </div>
+              <div className="bg-card/50 p-8 rounded-xl shadow-sm">
+                <ShieldCheck className="h-10 w-10 text-green-500 mb-4" />
+                <h3 className="text-2xl font-bold">Emotional Signs</h3>
+                <ul className="mt-4 space-y-2 text-muted-foreground list-disc list-inside">
+                  <li>Anxiety, depression, or unusual fears</li>
+                  <li>Low self-esteem or lack of confidence</li>
+                  <li>Difficulty concentrating or learning</li>
+                  <li>Appears emotionally detached or numb</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Identifying Children in Need Section */}
-        <section className="pb-16 md:pb-24">
+        <section className="p-4 md:p-8 lg:p-12">
           <div className="text-center">
             <h2 className="text-4xl md:text-5xl font-bold">
               Identifying Children in Need
@@ -99,7 +149,7 @@ const ChildAwarenessPage = () => {
             </p>
           </div>
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
-            <div className="bg-card p-8 rounded-xl shadow-sm">
+            <div className="bg-card/50 p-8 rounded-xl shadow-sm">
               <AlertTriangle className="h-10 w-10 text-destructive mb-4" />
               <h3 className="text-2xl font-bold">Physical Signs</h3>
               <ul className="mt-4 space-y-2 text-muted-foreground list-disc list-inside">
@@ -109,7 +159,7 @@ const ChildAwarenessPage = () => {
                 <li>Untreated medical or dental issues</li>
               </ul>
             </div>
-            <div className="bg-card p-8 rounded-xl shadow-sm">
+            <div className="bg-card/50 p-8 rounded-xl shadow-sm">
               <HeartHandshake className="h-10 w-10 text-primary mb-4" />
               <h3 className="text-2xl font-bold">Behavioral Signs</h3>
               <ul className="mt-4 space-y-2 text-muted-foreground list-disc list-inside">
@@ -119,7 +169,7 @@ const ChildAwarenessPage = () => {
                 <li>Fear of going home or to certain places</li>
               </ul>
             </div>
-            <div className="bg-card p-8 rounded-xl shadow-sm">
+            <div className="bg-card/50 p-8 rounded-xl shadow-sm">
               <ShieldCheck className="h-10 w-10 text-green-500 mb-4" />
               <h3 className="text-2xl font-bold">Emotional Signs</h3>
               <ul className="mt-4 space-y-2 text-muted-foreground list-disc list-inside">
@@ -159,7 +209,7 @@ const ServiceCard = ({
 
   return (
     <div
-      className="bg-card text-card-foreground rounded-2xl p-6 shadow-sm border flex flex-col justify-between"
+      className="bg-card/50 text-card-foreground rounded-2xl p-6 shadow-sm border flex flex-col justify-between"
       style={cardStyle}
     >
       <div>

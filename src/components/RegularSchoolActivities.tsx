@@ -4,19 +4,19 @@ import React from "react";
 type ActivitiesCardProps = {
   title: string;
   description: string;
-  delay?: number;
+  index?: number;
 };
 
 const ActivitiesCard: React.FC<ActivitiesCardProps> = ({
   title,
   description,
-  delay,
+  index,
 }) => {
   return (
     <div
       data-aos="fade-up"
       data-aos-duration="500"
-      data-aos-delay={delay}
+      data-aos-delay={(index || 0) * 100}
       className="relative overflow-clip bg-white group flex-col justify-start text-left p-4 rounded-lg shadow-lg z-10"
     >
       {/* Hover background effect */}
@@ -86,7 +86,7 @@ const RegularSchoolActivities: React.FC<ActivitiesProps> = ({ showCount }) => {
               key={index}
               title={item.title}
               description={item.description}
-              delay={index * 100}
+              index={index}
             />
           ))}
       </div>

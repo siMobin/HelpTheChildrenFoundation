@@ -163,6 +163,7 @@
 @layer base {
     * {
         @apply border-border outline-ring/50;
+        transition: all 0.3s ease-in-out;
     }
 
     body {
@@ -199,6 +200,24 @@
     .footer-bg {
         background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
         background-size: 20px 20px;
+    }
+}
+
+/* Team member scope */
+#team {
+    &:not(:hover) {
+        filter: grayscale(100);
+    }
+
+    transition: filter 1s linear;
+    /* @apply ; */
+
+    * {
+        transition: all 300ms linear;
+    }
+
+    .icon {
+        @apply transform hover:scale-110 transition-transform p-2 rounded-full bg-card shadow-md hover:shadow-lg hover:bg-accent/5;
     }
 }
 
@@ -303,7 +322,7 @@
 #campus {
     .campus-list {
         @apply flex flex-col items-center gap-6 p-4;
-        @apply bg-accent/50 rounded-lg text-center;
+        @apply bg-accent/50 rounded-lg text-center shadow hover:shadow-md;
 
         h3 {
             @apply text-xl font-bold;
@@ -524,5 +543,24 @@
         grid-row: span 4 / span 4;
         grid-column-start: 5;
         grid-row-start: 1;
+    }
+}
+
+
+.container_section {
+    background-image: url('https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1140&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-attachment: fixed;
+    @apply min-h-dvh w-dvw max-w-dvw overflow-clip bg-cover bg-center bg-no-repeat grid grid-cols-3 my-4 md:my-8 lg:my-12 gap-4;
+
+    div {
+        @apply p-4 md:p-8 lg:p-12;
+    }
+
+    .div-1 {
+        @apply !bg-primary text-white;
+    }
+
+    .div-3 {
+        @apply !bg-secondary text-white;
     }
 }

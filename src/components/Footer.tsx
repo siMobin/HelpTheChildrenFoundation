@@ -13,6 +13,7 @@ import {
   Sun,
   Moon,
   Cloud,
+  Youtube,
 } from "lucide-react";
 
 const Footer = () => {
@@ -303,6 +304,11 @@ const socialLinks = [
     name: "Facebook",
     href: "https://facebook.com",
     icon: <Facebook size={20} className="text-primary" />,
+  },
+  {
+    name: "YouTube",
+    href: "https://youtube.com",
+    icon: <Youtube size={20} className="text-red-400" />,
   },
   {
     name: "Twitter",
