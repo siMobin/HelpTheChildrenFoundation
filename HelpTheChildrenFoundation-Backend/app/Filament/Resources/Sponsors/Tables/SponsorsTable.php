@@ -17,6 +17,7 @@ class SponsorsTable
             ->columns([
                 TextColumn::make('sponsor_no')
                     ->label(__('Sponsor No'))
+                    ->copyable()
                     ->searchable(),
                 TextColumn::make('sponsor_name')
                     ->label(__('Sponsor Name'))
@@ -30,6 +31,7 @@ class SponsorsTable
                     ->sortable(),
                 TextColumn::make('facebook_id')
                     ->label(__('Facebook ID'))
+                    ->copyable()
                     ->searchable(),
                 TextColumn::make('phoneNumbers.phone_number')
                     ->label(__('Phone Number'))
@@ -66,6 +68,7 @@ class SponsorsTable
                     ->searchable(),
                 TextColumn::make('present_address')
                     ->label(__('Present Address'))
+                    ->copyable()
                     ->searchable(),
                 TextColumn::make('permanent_address')
                     ->label(__('Permanent Address'))

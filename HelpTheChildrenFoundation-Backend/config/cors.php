@@ -15,11 +15,11 @@ return [
     |
     */
 
-    'paths' => ['api/*', 'sanctum/csrf-cookie'],
+    'paths' => ['api/*', 'sanctum/csrf-cookie', '*'],
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => [env('CORS_ALLOW_ORIGINS', '*'),'http://localhost:3000'],
+    'allowed_origins' => [env('CORS_ALLOW_ORIGINS', '*'), 'http://localhost:3000'],
 
     'allowed_origins_patterns' => [],
 
