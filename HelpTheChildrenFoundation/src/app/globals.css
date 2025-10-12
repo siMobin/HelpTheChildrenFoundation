@@ -249,6 +249,19 @@
     }
 }
 
+/* School Program */
+.school-program-banner {
+    @apply bg-cover bg-center bg-no-repeat;
+    background-image: linear-gradient(45deg, color-mix(in oklab, var(--color-primary) 90%, transparent), color-mix(in oklab, var(--color-secondary) 90%, transparent)), url('/images/school/panda.webp');
+
+
+}
+
+.school-program-image {
+    @apply object-cover w-full aspect-square rounded-full relative border-4 shadow-xl border-accent/50 hover:scale-105;
+    border-radius: 57% 43% 59% 41% / 64% 62% 38% 36% !important;
+}
+
 /* Responsive masonry-like grid using CSS Columns */
 .gallery-grid {
     columns: 1;
