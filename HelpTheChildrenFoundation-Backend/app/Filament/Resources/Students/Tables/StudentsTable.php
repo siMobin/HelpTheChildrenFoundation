@@ -5,12 +5,15 @@ namespace App\Filament\Resources\Students\Tables;
 use App\Models\Student;
 use Filament\Tables\Table;
 use Filament\Actions\Action;
+use Filament\Actions\BulkAction;
 use Filament\Actions\EditAction;
 use App\Models\StudentPhoneNumber;
 use Filament\Actions\BulkActionGroup;
+use Filament\Forms\Components\Select;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\ImageColumn;
+use Illuminate\Database\Eloquent\Collection;
 
 class StudentsTable
 {
@@ -128,6 +131,28 @@ class StudentsTable
             ])
             ->toolbarActions([
                 BulkActionGroup::make([
+                    BulkAction::make('change_class')
+                        ->label(__('Change Class'))
+                        ->icon('heroicon-m-pencil-square')
+                        ->form([
+                            Select::make('class')
+                                ->options([
+                                    'শিশু' => __('শিশু'),
+                                    'শিশু-খ' => __('শিশু-খ'),
+                                    'প্রথম' => __('প্রথম'),
+                                    'দ্বিতীয়' => __('দ্বিতীয়'),
+                                    "তৃতীয়" => __('তৃতীয়'),
+                                    'চতুর্থ' => __('চতুর্থ'),
+                                    'পঞ্চম' => __('পঞ্চম'),
+                                    'ষষ্ঠ' => __('ষষ্ঠ'),
+                                    'সপ্তম' => __('সপ্তম'),
+                                    'অষ্টম' => __('অষ্টম'),
+                                ])
+                                ->required(),
+                        ])
+                        ->action(function (Collection $records, array $data) {
+                            $records->each->update(['class' => $data['class']]);
+                        }),
                     DeleteBulkAction::make(),
                 ]),
             ]);

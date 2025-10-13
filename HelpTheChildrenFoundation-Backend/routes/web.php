@@ -9,6 +9,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Redirect to admin panel '/admin' from '/' route
+Route::get('/', function () {
+    return redirect('/admin');
+});
+
+
 Route::get('students/{record}/pdf/download', [StudentController::class, 'downloadPdf'])->name('student.pdf.download');
 
 // API

@@ -18,6 +18,7 @@ use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
+use App\Filament\Resources\Students\Widgets\StudentStatsWidget;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -34,6 +35,10 @@ class AdminPanelProvider extends PanelProvider
             ->colors([
                 'primary' => Color::Sky,
             ])
+            ->favicon(asset('icon.svg'))
+            ->brandName(config('app.name'))
+            // ->brandLogo(asset('icon.svg'))
+            ->brandLogoHeight('3rem')
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')
             ->pages([
@@ -41,7 +46,9 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
             ->widgets([
+                \App\Filament\Widgets\AppInfoWidget::class,
                 AccountWidget::class,
+                StudentStatsWidget::class,
                 // FilamentInfoWidget::class,
             ])
             ->middleware([
