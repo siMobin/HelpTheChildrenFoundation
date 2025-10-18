@@ -1,4 +1,4 @@
-# Help The Children Foundation - Developer README
+# Help The Children Foundation
 
 This document provides instructions for setting up and running the Help The Children Foundation project for development purposes. The project is divided into two main parts: a Next.js frontend and a Laravel backend.
 
@@ -32,6 +32,13 @@ The frontend is a [Next.js](https://nextjs.org/) application.
     npm run dev
     ```
 
+### To Build & Serve,
+
+```bash
+   npm run build
+   npm start
+```
+
 The application will be available at [http://localhost:3000](http://localhost:3000).
 
 ---
@@ -44,41 +51,59 @@ The backend is a [Laravel](https://laravel.com/) application.
 
 1.  **Navigate to the backend directory:**
 
-    ```bash
-    cd HelpTheChildrenFoundation-Backend
-    ```
+```bash
+cd HelpTheChildrenFoundation-Backend
+```
 
 2.  **Install dependencies:**
 
-    ```bash
-    composer install
-    ```
+```bash
+npm install
+composer install
+```
 
 3.  **Create a `.env` file:**
     Copy the `.env.example` file to a new file named `.env`.
 
-    ```bash
-    cp .env.example .env
-    ```
+```bash
+cp .env.example .env
+```
 
 4.  **Generate an application key:**
 
-    ```bash
-    php artisan key:generate
-    ```
+```bash
+php artisan key:generate
+```
 
 5.  **Run database migrations:**
     Make sure you have a database configured in your `.env` file.
 
-    ```bash
-    php artisan migrate
-    ```
+```bash
+php artisan migrate
+```
 
 6.  **Run the development server:**
-    ```bash
-    php artisan serve
-    ```
+
+```bash
+npm run dev
+php artisan serve
+```
+
+### To Build & Serve,
+
+```bash
+   npm run build
+   php artisan serve
+```
 
 The backend API will be available at [http://localhost:8000](http://localhost:8000).
 
 ---
+
+## Create 1st Admin
+
+```bash
+php artisan make:filament-user
+```
+
+Now, Follow the instructions to create your first admin user
